@@ -13,7 +13,7 @@ Output: A list of all the used prime numbers and how many times it was used
 ## Thought Process
 Outer loop: this will be the loop that satrts from 2 to see if they can divide the input num.
 Inner Loop: divides the input repeatedly by the factor as long as it divides evenly keeping track on how many times it was used. 
-
+lol
 The larger the number the more it has to do 
 
 ## Examples
