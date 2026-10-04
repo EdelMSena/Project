@@ -1,6 +1,11 @@
 package api;
 
-import api.webserver.*;
+import api.webserver.WebServer;
+import api.webserver.InputDataResponse;
+import api.webserver.DataRequest;
+import api.webserver.FactorsLoading;
+import api.webserver.NumIdentifier;
+
 
 public class PrototypeApi{
     public void prototype(WebServer server){
