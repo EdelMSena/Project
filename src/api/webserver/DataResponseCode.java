@@ -3,11 +3,11 @@ package api.webserver;
 import java.util.List;
 
 public enum DataResponseCode {
-    DEFAULT;  // Add at least one enum constant
+    DEFAULT(new java.util.ArrayList());  // Provide List argument
 
     private List factors;
 
-    DataResponseCode(List factors) {  // Remove 'private' keyword
+    DataResponseCode(List factors) {
         this.factors = factors;
     }
 
