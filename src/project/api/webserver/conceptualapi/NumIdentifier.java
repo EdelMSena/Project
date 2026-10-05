@@ -1,8 +1,9 @@
-package project.api.webserver.conceptualapi;
+package project.api.webserver.networkapi;
 
-import project.annotations.ConceptualApi;
+import project.annotations.NetworkAPI;
 
 public interface NumIdentifier {
-    @ConceptualAPI
-    long getId();
+
+    @NetworkAPI
+    String getIdentifier();
 }
