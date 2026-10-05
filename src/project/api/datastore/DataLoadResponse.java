@@ -4,5 +4,5 @@ import project.annotations.processapi;
 
 public interface DataLoadResponse{
     @ProcessAPI
-
+    void processData();
 }
