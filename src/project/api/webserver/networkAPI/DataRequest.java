@@ -4,4 +4,5 @@ import project.annotations.networkAPI;
 
 public interface DataRequest {
     @NetworkAPI
+    void processRequest();
 }
