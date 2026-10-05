@@ -1,6 +1,9 @@
-package api.webserver;
+package project.api.webserver.networkAPI;
 
 import java.util.List;
+
+import project.annotations.NetworkAPI;
+@NetworkAPI
 
 public enum DataResponseCode {
     DEFAULT(new java.util.ArrayList());  // Provide List argument

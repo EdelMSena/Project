@@ -1,4 +1,7 @@
-package api.datastore;
+package project.api.datastore;
+
+import project.annotations.ProcessAPI;
+@ProcessAPI
 
 public class PrototypeDataStore{
     public void prototype(DataStore datastore){

@@ -1,4 +1,4 @@
-package api;
+package project.api;
 
 import api.webserver.WebServer;
 import api.webserver.InputDataResponse;
@@ -6,6 +6,9 @@ import api.webserver.ComputeInputData;
 import api.webserver.FactorsLoading;
 import api.webserver.NumIdentifier;
 import java.util.List;
+
+import project.annotations.ConceptualAPIPrototype;
+@ConceptualAPIPrototype
 
 public class PrototypeApi{
     public void prototype(WebServer server){
