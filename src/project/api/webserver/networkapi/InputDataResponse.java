@@ -7,7 +7,4 @@ public interface InputDataResponse {
 
     @NetworkAPI
     DataResponseCode getFactors();
-
-    @NetworkAPI
-    NumIdentifier getNumIdentifier();
 }
