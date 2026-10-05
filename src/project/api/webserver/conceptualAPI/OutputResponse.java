@@ -4,5 +4,5 @@ import project.annotations.conceptualapi;
 
 public interface OutputResponse {
     @ConceptualAPI
-
+    void sendResponse();
 }
