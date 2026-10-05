@@ -1,8 +1,8 @@
-package project.api.webserver.networkAPI;
+package project.api.webserver.networkapi;
 
 import java.util.List;
 
-import project.annotations.NetworkAPI;
+import project.annotations.networkAPI;
 @NetworkAPI
 
 public interface InputDataResponse {
