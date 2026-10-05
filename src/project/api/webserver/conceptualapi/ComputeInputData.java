@@ -2,7 +2,7 @@ package project.api.webserver.conceptualapi;
 
 import java.util.List;
 
-import project.annotations.conceptualapi;
+import project.annotations.ConceptualApi;
 
 public interface ComputeInputData {
     @ConceptualAPI

@@ -1,6 +1,6 @@
 package project.api.webserver.conceptualapi;
 
-import project.annotations.conceptualapi;
+import project.annotations.ConceptualApi;
 
 public interface FactorsLoading {
     @ConceptualAPI

@@ -2,7 +2,7 @@ package project.api.webserver.networkapi;
 
 import java.util.List;
 
-import project.annotations.networkAPI;
+import project.annotations.NetworkAPI;
 
 public enum DataResponseCode {
     @NetworkAPI
