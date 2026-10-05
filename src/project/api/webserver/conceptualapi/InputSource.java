@@ -1,4 +1,4 @@
-package project.api.webserver.conceptualAPI;
+package project.api.webserver.conceptualapi;
 
 import project.annotations.conceptualapi;
 
