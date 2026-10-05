@@ -1,4 +1,4 @@
-package com.example.api.wrappers;
+package api.webserver;
 
 public interface InputSource {
     String getSourceDetails();
