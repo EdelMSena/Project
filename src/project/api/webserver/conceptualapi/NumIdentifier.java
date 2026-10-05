@@ -1,9 +1,16 @@
-package project.api.webserver.networkapi;
+package project.api.webserver.conceptualapi;
 
 import project.annotations.NetworkAPI;
 
-public interface NumIdentifier {
+@NetworkAPI
+public class NumIdentifier {
+    private long value;
 
-    @NetworkAPI
-    String getIdentifier();
+    public NumIdentifier(long value) {
+        this.value = value;
+    }
+
+    public long getValue() {
+        return value;
+    }
 }
