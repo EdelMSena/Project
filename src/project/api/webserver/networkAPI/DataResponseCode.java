@@ -3,9 +3,10 @@ package project.api.webserver.networkapi;
 import java.util.List;
 
 import project.annotations.networkAPI;
-@NetworkAPI
 
 public enum DataResponseCode {
+    @NetworkAPI
+
     DEFAULT(new java.util.ArrayList());  // Provide List argument
 
     private List factors;

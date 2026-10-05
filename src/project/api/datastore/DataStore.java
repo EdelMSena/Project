@@ -1,9 +1,10 @@
 package project.api.datastore;
 
 import project.annotations.processapi;
-@ProcessAPI
 
 public interface DataStore {
+    @ProcessAPI
+
     DataStorageResponse storeData(DataStorageRequest request);
     DataLoadResponse loadData(DataStorageKey key);
 }

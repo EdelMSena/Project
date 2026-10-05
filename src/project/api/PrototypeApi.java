@@ -8,9 +8,10 @@ import api.webserver.NumIdentifier;
 import java.util.List;
 
 import project.annotations.ConceptualAPIPrototype;
-@ConceptualAPIPrototype
 
 public class PrototypeApi{
+    @ConceptualAPIPrototype
+
     public void prototype(WebServer server){
         InputDataResponse inputResponse = server.input(new ComputeInputData() {
             @Override
