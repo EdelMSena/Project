@@ -1,4 +1,4 @@
-/*package project.checkpointtests;
+package project.checkpointtests;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -38,4 +38,4 @@ public class Utils {
             result.add(Utils.class.getClassLoader().loadClass(fullName));
         }
     }
-}*/
+}

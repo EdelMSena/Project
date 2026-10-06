@@ -1,6 +1,6 @@
 package api.webserver;
 
-import api.annotations.ConceptualAPI;
+import project.annotations.ConceptualAPI;
 
 @ConceptualAPI
 public interface DataRequest {

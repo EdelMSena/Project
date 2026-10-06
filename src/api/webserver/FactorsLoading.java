@@ -1,6 +1,6 @@
 package api.webserver;
 
-import api.annotations.NetworkAPI;
+import project.annotations.NetworkAPI;
 
 @NetworkAPI
 public interface FactorsLoading {

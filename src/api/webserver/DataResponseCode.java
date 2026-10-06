@@ -1,7 +1,7 @@
 package api.webserver;
 
 import java.util.List;
-import api.annotations.ConceptualAPI;
+import project.annotations.ConceptualAPI;
 
 @ConceptualAPI
 public enum DataResponseCode {
