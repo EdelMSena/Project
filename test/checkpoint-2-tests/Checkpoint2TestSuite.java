@@ -13,11 +13,12 @@ import org.junit.jupiter.params.provider.MethodSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
 import api.annotations.ConceptualAPI;
-import api.project.annotations.ConceptualAPIPrototype;
+import api.annotations.ConceptualAPIPrototype;
 import api.annotations.NetworkAPI;
 import api.annotations.NetworkAPIPrototype;
 import api.annotations.ProcessAPI;
 import api.annotations.ProcessAPIPrototype;
+import project.checkpointtests.Utils;
 
 /**
  * This test checks that all 3 APIs exist in the 'src' folder as interfaces, with the appropriate annotations, and that they all
