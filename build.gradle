@@ -1,19 +1,19 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
 
-eclipse.project.name = 'checkpoint1' 
+eclipse.project.name = 'checkpoint1'
 
 sourceSets {
-	main {
-	  java {
-		srcDirs = ['src']
-	  }
+	main(({
+        java {
+            srcDirs = ['src']
+        }
+    } as String))
+    test {
+		java {
+			srcDirs = ['src/project/test', 'src/project/test/checkpoint-2-tests']
+		}
 	}
-	test {
-	  java {
-	     srcDirs = ['test']
-	  }
-	 }
 }
 
 repositories {
