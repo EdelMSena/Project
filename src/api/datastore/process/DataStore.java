@@ -1,6 +1,6 @@
 package api.datastore.process;
 
-import project.annotations.ProcessApi;
+import project.annotations.ProcessAPI;
 
 @ProcessApi
 public interface DataStore {
