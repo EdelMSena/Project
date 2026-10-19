@@ -1,8 +1,8 @@
-package api.datastore;
+package api.datastore.process;
 
-import project.annotations.ProcessAPI;
+import project.annotations.ProcessApi;
 
-@ProcessAPI
+@ProcessApi
 public interface DataStore {
     DataStorageResponse storeData(DataStorageRequest request);
     DataLoadResponse loadData(DataStorageKey key);
