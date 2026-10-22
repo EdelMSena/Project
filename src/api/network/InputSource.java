@@ -1,4 +1,4 @@
-package api.webserver;
+package api.network;
 
 import project.annotations.NetworkAPI;
 

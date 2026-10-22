@@ -1,10 +1,10 @@
 package api;
 
-import api.webserver.WebServer;
-import api.webserver.InputDataResponse;
-import api.webserver.ComputeInputData;
-import api.webserver.FactorsLoading;
-import api.webserver.NumIdentifier;
+import api.WebServer;
+import api.InputDataResponse;
+import api.ComputeInputData;
+import api.FactorsLoading;
+import api.NumIdentifier;
 import java.util.List;
 
 public class PrototypeApi{

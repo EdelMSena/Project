@@ -1,4 +1,4 @@
-package api.datastore.conceptual;
+package api.process;
 
 public class PrototypeDataStore{
     public void prototype(DataStore datastore){

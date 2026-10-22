@@ -1,4 +1,4 @@
-package api.datastore;
+package api.process;
 
 public interface DataStorageResponse {
 
