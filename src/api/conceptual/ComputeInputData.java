@@ -7,3 +7,4 @@ import project.annotations.ConceptualAPI;
 public interface ComputeInputData {
     List getSourceDetails(DataRequest dataReq, FactorsLoading factors);
 }
+//wrap list in object

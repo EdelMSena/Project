@@ -4,7 +4,7 @@ import project.annotations.ProcessAPI;
 
 @ProcessAPI
 public interface DataStorageKey {
-    DataLoadResponse sendLoad(LoadVal load);
+    DataReadResponse readStore(readVal read);
 
     DataStorageResponse writeStore(StorageVal store);
 }
