@@ -1,8 +1,8 @@
 package api.datastore;
 
-import project.annotations.ConceptualAPI;
+import project.annotations.ProcessAPI;
 
-@ConceptualAPI
+@ProcessApi
 public interface DataStorageKey {
     DataLoadResponse sendLoad(LoadVal load);
 
