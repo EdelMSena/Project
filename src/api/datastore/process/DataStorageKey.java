@@ -2,7 +2,7 @@ package api.datastore;
 
 import project.annotations.ProcessAPI;
 
-@ProcessApi
+@ProcessAPI
 public interface DataStorageKey {
     DataLoadResponse sendLoad(LoadVal load);
 
