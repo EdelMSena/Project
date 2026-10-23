@@ -1,4 +1,4 @@
-package api.network;
+package api;
 
 public interface OutputResponse {
 

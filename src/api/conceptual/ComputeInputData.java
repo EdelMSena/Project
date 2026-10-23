@@ -1,4 +1,4 @@
-package api.conceptual;
+package api;
 
 import java.util.List;
 import project.annotations.ConceptualAPI;

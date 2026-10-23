@@ -1,4 +1,4 @@
-package api.conceptual;
+package api;
 
 public interface NumIdentifier {
 
