@@ -5,6 +5,6 @@ import project.annotations.ConceptualAPI;
 
 @ConceptualAPI
 public interface ComputeInputData {
-    List getSourceDetails(DataRequest dataReq, FactorsLoading factors);
+    InputDataResponse getSourceDetails(DataRequest dataReq, FactorsLoading factors);
 }
 //wrap list in object
