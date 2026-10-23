@@ -1,10 +1,10 @@
 package api;
 
-import api.webserver.ComputeInputData;
-import api.webserver.FactorsLoading;
-import api.webserver.InputDataResponse;
-import api.webserver.NumIdentifier;
-import api.webserver.WebServer;
+import api.ComputeInputData;
+import api.FactorsLoading;
+import api.InputDataResponse;
+import api.NumIdentifier;
+import api.WebServer;
 import java.util.ArrayList;
 import java.util.List;
 
