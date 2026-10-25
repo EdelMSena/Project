@@ -17,4 +17,5 @@ public class PrototypeApi {
                 return new java.util.ArrayList();
             }
         });
+    }
 }
