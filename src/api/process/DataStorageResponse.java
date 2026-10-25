@@ -1,7 +1,7 @@
 package api;
 
 public interface DataStorageResponse {
-    StorageVal store;
+    StorageVal store = new StorageVal();
 
     DataStorageKey getDataKey();
 

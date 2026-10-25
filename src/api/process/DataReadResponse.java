@@ -1,5 +1,5 @@
 package api;
 
 public interface DataReadResponse {
-    readVal read;
+    readVal read = new readVal();
 }
