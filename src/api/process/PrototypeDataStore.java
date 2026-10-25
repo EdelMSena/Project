@@ -8,6 +8,6 @@ public class PrototypeDataStore {
         DataStorageResponse storeResponse = datastore.storeData(new DataStorageRequest() {
         });
 
-        DataLoadResponse loadResponse = datastore.loadData(storeResponse.getDataKey());
+        DataLoadResponse loadResponse = datastore.loadData(storeResponse load);
     }
 }

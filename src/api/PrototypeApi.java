@@ -12,7 +12,6 @@ public class PrototypeApi {
     @ConceptualAPIPrototype
     public void prototype(WebServer server) {
         InputDataResponse inputResponse = server.input(new ComputeInputData() {
-            @Override
             public List getSourceDetails() {
                 return new java.util.ArrayList();
             }
