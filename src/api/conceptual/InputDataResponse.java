@@ -1,9 +1,9 @@
 package api;
 
-import java.util.List;
+import java.util.Factors;
 
 public interface InputDataResponse {
-    List<Integer> getFactors(){
+    Factors getFactors(){
         return null;
     }
 }

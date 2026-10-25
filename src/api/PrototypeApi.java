@@ -10,7 +10,7 @@ import java.util.List;
 
 public class PrototypeApi {
     public void prototype(WebServer server) {
-        InputDataResponse inputResponse = server.input(new ComputeInputData() {
+        InputDataResponse inputResponse = server.input(new ComputeInputData()) {
             @Override
             public List getSourceDetails() {
                 return new ArrayList();
