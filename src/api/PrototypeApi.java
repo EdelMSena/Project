@@ -9,6 +9,5 @@ import java.util.List;
 import project.annotations.ConceptualAPIPrototype;
 
 public class PrototypeApi {
-    @ConceptualAPIPrototype
 
 }
