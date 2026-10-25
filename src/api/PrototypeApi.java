@@ -17,13 +17,4 @@ public class PrototypeApi {
                 return new java.util.ArrayList();
             }
         });
-
-        if (inputResponse != null && inputResponse.getFactors() != null
-                && inputResponse.getFactors().getFactors() != null
-                && !inputResponse.getFactors().getFactors().isEmpty()) {
-            NumIdentifier numIdentifier = inputResponse.getNumIdentifier();
-            FactorsLoading loadFactors = server.factorLoad(numIdentifier);
-            server.output(numIdentifier);
-        }
-    }
 }
