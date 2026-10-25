@@ -1,8 +1,12 @@
-package api;
+package api.datastore;
 
-public class PrototypeDataStore{
-    public void prototype(DataStore datastore){
-        DataStorageResponse storeResponse = datastore.storeData(new DataStorageRequest() {});
+import project.annotations.ProcessAPIPrototype;
+
+public class PrototypeDataStore {
+    @ProcessAPIPrototype
+    public void prototype(DataStore datastore) {
+        DataStorageResponse storeResponse = datastore.storeData(new DataStorageRequest() {
+        });
 
         DataLoadResponse loadResponse = datastore.loadData(storeResponse.getDataKey());
     }
