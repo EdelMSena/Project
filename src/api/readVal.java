@@ -1,5 +1,5 @@
 package api;
 
-public interface readVal {
-
+public interface ReadVal {
+    String getValue();
 }
