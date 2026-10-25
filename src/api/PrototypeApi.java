@@ -10,11 +10,5 @@ import project.annotations.ConceptualAPIPrototype;
 
 public class PrototypeApi {
     @ConceptualAPIPrototype
-    public void prototype(WebServer server) {
-        InputDataResponse inputResponse = server.input(new ComputeInputData() {
-            public List getSourceDetails() {
-                return new java.util.ArrayList();
-            }
-        });
-    }
+
 }
