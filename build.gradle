@@ -3,12 +3,12 @@ apply plugin: 'eclipse'
 
 eclipse.project.name = 'software eng'
 
-def generatedMainSrc = layout.buildDirectory.dir("generated-src/main/java")
+def compatSrcDir = file("$buildDir/compat-src")
 
 sourceSets {
 	main {
 		java {
-			srcDirs = [generatedMainSrc.get().asFile]
+			srcDirs = [compatSrcDir]
 		}
 	}
 	test {
@@ -18,14 +18,19 @@ sourceSets {
 	}
 }
 
-tasks.register('mirrorSrcForCompile', Sync) {
-	from('src')
-	into generatedMainSrc
-	include '**/*.java'
+tasks.register('prepareCompatSrc') {
+	doLast {
+		delete compatSrcDir
+		copy {
+			from('src')
+			into compatSrcDir
+			include '**/*.java'
+		}
+	}
 }
 
-compileJava.dependsOn mirrorSrcForCompile
-compileTestJava.dependsOn mirrorSrcForCompile
+compileJava.dependsOn prepareCompatSrc
+compileTestJava.dependsOn prepareCompatSrc
 
 repositories {
 	mavenCentral()
