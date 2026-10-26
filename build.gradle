@@ -3,30 +3,46 @@ apply plugin: 'eclipse'
 
 eclipse.project.name = 'software eng'
 
+def compatSrcDir = file("$buildDir/compat-src")
+
 sourceSets {
 	main {
-	  java {
-		srcDirs = ['src']
-	  }
+		java {
+			srcDirs = [compatSrcDir]
+		}
 	}
 	test {
-	  java {
-	     srcDirs = ['test']
-	  }
-	 }
+		java {
+			srcDirs = ['test']
+		}
+	}
 }
 
+tasks.register('prepareCompatSrc') {
+	doLast {
+		delete compatSrcDir
+		copy {
+			from('src')
+			into compatSrcDir
+			include '**/*.java'
+		}
+	}
+}
+
+compileJava.dependsOn prepareCompatSrc
+compileTestJava.dependsOn prepareCompatSrc
+
 repositories {
-    mavenCentral()
+	mavenCentral()
 }
 
 dependencies {
-    testImplementation('org.junit.jupiter:junit-jupiter:5.10.2')
-	testImplementation('org.mockito:mockito-core:5.10.0')
-	implementation('com.google.code.gson:gson:2.13.1')
-	testImplementation('fr.inria.gforge.spoon:spoon-core:10.4.0')
+	testImplementation 'org.junit.jupiter:junit-jupiter:5.10.2'
+	testImplementation 'org.mockito:mockito-core:5.10.0'
+	implementation 'com.google.code.gson:gson:2.13.1'
+	testImplementation 'fr.inria.gforge.spoon:spoon-core:10.4.0'
 }
 
 test {
-    useJUnitPlatform()
+	useJUnitPlatform()
 }
