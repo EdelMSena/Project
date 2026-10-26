@@ -1,4 +1,4 @@
-package api.webserver;
+package api;
 
 import java.util.List;
 

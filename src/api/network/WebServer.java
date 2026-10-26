@@ -1,4 +1,4 @@
-package api.webserver;
+package api;
 
 public interface WebServer {
     InputDataResponse input(ComputeInputData computeData);
