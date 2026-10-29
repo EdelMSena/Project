@@ -5,7 +5,7 @@ import project.annotations.NetworkAPIPrototype;
 public class InputSourcePrototype {
     private InputSource is;
 
-    public class InputSourcePrototype(InputSource is){
+    public InputSourcePrototype(InputSource is){
         this.is = is;
     }
 
