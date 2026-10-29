@@ -3,17 +3,18 @@ package api;
 import project.annotations.ProcessAPIPrototype;
 
 public class DSKPrototype {
-    private DataStorageKey key;
+    private final DataStorageKey key;
 
-    public DSKPrototype(DataStorageKey key){
+    public DSKPrototype(DataStorageKey key) {
         this.key = key;
     }
 
     @ProcessAPIPrototype
-    public void readStore(ReadVal read, StorageVal store){
-        ReadVal read = new ReadVal();
+    public ReadVal readStore(ReadVal read) {
+        return read;
     }
-    public void writeStore(StorageVal store){
-        StorageVal store = new StorageVal();
+
+    public StorageVal writeStore(StorageVal store) {
+        return store;
     }
 }
