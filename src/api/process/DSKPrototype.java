@@ -5,7 +5,7 @@ import project.annotations.ProcessAPIPrototype;
 public class DSKPrototype {
     private DataStorageKey key;
 
-    class DSKPrototype(DataStorageKey key){
+    public class DSKPrototype(DataStorageKey key){
         this.key = key;
     }
 

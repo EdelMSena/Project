@@ -11,7 +11,7 @@ import project.annotations.ConceptualAPIPrototype;
 public class CIDPrototype {
     private ComputeInputData compute;
 
-    class CIDPrototype(ComputeInputData compute){
+    public class CIDPrototype(ComputeInputData compute){
         this.compute = compute;
     }
 
