@@ -10,7 +10,7 @@ public class InputSourcePrototype {
     }
 
     @NetworkAPIPrototype
-    public void submitJob(Input Source is){
+    public void submitJob(InputSource is){
         Job val = new Job("file.txt");
         OutputResponse output = is.submitJob(val);
     }
