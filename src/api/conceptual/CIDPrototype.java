@@ -1,4 +1,4 @@
-package api;
+package api.conceptual;
 
 import project.annotations.ConceptualAPIPrototype;
 
@@ -10,7 +10,7 @@ public class CIDPrototype {
     }
 
     @ConceptualAPIPrototype
-    public void getSourceDetails(DataRequest dataReq, FactorsLoading factors) {
+    public void getSourceDetails(ComputeInputData compute) {
         DataRequest request = dataReq;
         FactorsLoading factorData = factors;
     }

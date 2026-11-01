@@ -1,4 +1,4 @@
-package api;
+package api.process;
 
 import project.annotations.ProcessAPIPrototype;
 
@@ -10,11 +10,11 @@ public class DSKPrototype {
     }
 
     @ProcessAPIPrototype
-    public ReadVal readStore(ReadVal read) {
+    public ReadVal readStore(DataStorageKey key) {
         return read;
     }
 
-    public StorageVal writeStore(StorageVal store) {
+    public StorageVal writeStore(DataStorageKey key) {
         return store;
     }
 }

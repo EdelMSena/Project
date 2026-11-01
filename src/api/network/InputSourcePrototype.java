@@ -1,4 +1,4 @@
-package api;
+package api.network;
 
 import project.annotations.NetworkAPIPrototype;
 
@@ -10,7 +10,7 @@ public class InputSourcePrototype {
     }
 
     @NetworkAPIPrototype
-    public void submitJob(Job job){
+    public void submitJob(Input Source is){
         Job val = new Job("file.txt");
         OutputResponse output = is.submitJob(val);
     }
