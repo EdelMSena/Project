@@ -39,7 +39,6 @@ public class OrderProcessorIntegrationTest {
 
     @Test
     public void testOrderProcessorWithRealInventory() {
-        // 3. Instantiate InMemoryInventoryService, add fake inventory, and pass to OrderProcessor
         InMemoryInventoryService inventoryService = new InMemoryInventoryService();
         String itemId = "WIDGET-01";
         inventoryService.addStock(itemId, 10);
