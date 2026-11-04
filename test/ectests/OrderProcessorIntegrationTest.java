@@ -5,6 +5,9 @@ import java.util.Map;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import api.ec.InventoryService;
+import api.ec.OrderProcessor;
+
 public class OrderProcessorIntegrationTest {
 
     public static class InMemoryInventoryService implements InventoryService {
