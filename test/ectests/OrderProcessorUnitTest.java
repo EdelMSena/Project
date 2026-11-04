@@ -11,6 +11,9 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
+import api.ec.InventoryService;
+import api.ec.OrderProcessor;
+
 public class OrderProcessorUnitTest {
 
     @Test
