@@ -1,4 +1,4 @@
-package api;
+package api.ec;
 
 public class OrderProcessor {
     private final InventoryService inventoryService;
