@@ -12,6 +12,8 @@ public class CIDPrototype {
 
     @ConceptualAPIPrototype
     public void getSourceDetails(ComputeInputData compute) {
-        compute.getSourceDetails(DataRequest dataReq, FactorsLoading factors);
+        DataRequest dataReq = null;
+        FactorsLoading factors = null;
+        compute.getSourceDetails(dataReq, factors);
     }
 }
