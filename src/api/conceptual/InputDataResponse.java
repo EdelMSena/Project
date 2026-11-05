@@ -1,5 +1,4 @@
-package api;
-
+package api.conceptual;
 
 public interface InputDataResponse {
 

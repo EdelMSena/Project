@@ -1,4 +1,4 @@
-package api;
+package api.network;
 
 public final class Job {
     private final String value;
