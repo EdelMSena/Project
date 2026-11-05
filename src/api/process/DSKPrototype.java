@@ -11,10 +11,13 @@ public class DSKPrototype {
 
     @ProcessAPIPrototype
     public ReadVal readStore(DataStorageKey key) {
-        return read;
+        ReadVal read = null;
+        key.readStore(read);
     }
 
     public StorageVal writeStore(DataStorageKey key) {
-        return store;
+        StorageVal store = null;
+        key.writeStore(store);
+
     }
 }
