@@ -1,12 +1,14 @@
-import org.junit.jupiter.api.Test;
+import api.conceptual.ComputeInputData;
+import api.network.NetworkImp;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
 public class TestNetworkAPI {
     @Test
     public void testNetworkApiSmoke() {
-        ConceptualAPI mockConceptual = Mockito.mock(ConceptualAPI.class);
-        NetworkAPI networkApi = new NetworkApiImpl(mockConceptual);
+        ComputeInputData mockConceptual = Mockito.mock(ComputeInputData.class);
+        NetworkImp networkApi = new NetworkImp(mockConceptual);
 
         Assertions.assertNotNull(networkApi);
     }

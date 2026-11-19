@@ -1,11 +1,12 @@
-import org.junit.jupiter.api.Test;
+import api.process.ProcessImp;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class TestProcessAPI {
 
     @Test
     public void testProcessApiSmoke() {
-        ProcessAPI processApi = new ProcessApiImpl();
+        ProcessImp processApi = new ProcessImp();
 
         Assertions.assertNotNull(processApi);
     }

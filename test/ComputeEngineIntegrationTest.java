@@ -1,9 +1,15 @@
-import org.junit.jupiter.api.Test;
+import api.conceptual.ConceptualImp;
+import api.conceptual.ComputeInputData;
+import api.network.Job;
+import api.network.NetworkImp;
+import api.network.OutputResponse;
+import api.process.ProcessImp;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 import test.infrastructure.TestInMemoryDataStoreAPI;
 
-import java.util.Arrays;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class ComputeEngineIntegrationTest {
@@ -15,9 +21,9 @@ public class ComputeEngineIntegrationTest {
 
         TestInMemoryDataStoreAPI testDataStore = new TestInMemoryDataStoreAPI(initialInput, outputStorage);
 
-        ProcessAPI processApi = new ProcessApiImpl();
-        ConceptualAPI conceptualApi = new ConceptualApiImpl(processApi);
-        NetworkAPI networkApi = new NetworkApiImpl(conceptualApi);
+        ProcessImp processImp = new ProcessImp();
+        ConceptualImp conceptualImp = new ConceptualImp(processImp);
+        NetworkImp networkImp = new NetworkImp(conceptualImp);
 
         List<Integer> data = testDataStore.readInput();
         Assertions.assertEquals(3, data.size());
@@ -25,7 +31,9 @@ public class ComputeEngineIntegrationTest {
         Assertions.assertEquals(10, data.get(1));
         Assertions.assertEquals(25, data.get(2));
 
-        networkApi.handleRequest(data);
+        for (Integer value : data) {
+            OutputResponse response = networkImp.submitJob(new Job(value.toString()));
+        }
 
         Assertions.assertNotNull(outputStorage);
     }

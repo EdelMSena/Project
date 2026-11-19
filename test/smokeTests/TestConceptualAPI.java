@@ -1,13 +1,15 @@
-import org.junit.jupiter.api.Test;
+import api.conceptual.ConceptualImp;
+import api.process.DataStorageKey;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
 public class TestConceptualAPI {
 
     @Test
     public void testConceptualApiSmoke() {
-        ProcessAPI mockProcess = Mockito.mock(ProcessAPI.class);
-        ConceptualAPI conceptualApi = new ConceptualApiImpl(mockProcess);
+        DataStorageKey mockProcess = Mockito.mock(DataStorageKey.class);
+        ConceptualImp conceptualApi = new ConceptualImp(mockProcess);
 
         Assertions.assertNotNull(conceptualApi);
     }
