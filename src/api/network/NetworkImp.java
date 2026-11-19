@@ -10,7 +10,7 @@ public class NetworkImp implements InputSource {
     }
 
     @Override
-    public String handleRequest(Object requestData) {
-        return "";
+    public String submitJob(InputSource is){
+        reuturn "";
     }
 }

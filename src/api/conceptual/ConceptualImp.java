@@ -10,7 +10,7 @@ public class ConceptualImp implements ComputeInputData {
     }
 
     @Override
-    public Object processComputation(Object input) {
+    public Object getSourceDetails(ComputeInputData compute) {
         return null;
     }
 }
