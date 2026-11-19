@@ -1,4 +1,6 @@
 package api.network;
+package api.conceptual;
+package api.process;
 
 public class NetworkImp implements InputSource {
     private final ConceptualApi conceptualApi;
