@@ -1,6 +1,9 @@
 package api.network;
-package api.conceptual;
-package api.process;
+
+import project.annotations.NetworkAPI;
+import project.annotations.ConceptualAPI;
+import project.annotations.ProcessAPI;
+
 
 public class NetworkImp implements InputSource {
     private final ConceptualApi conceptualApi;

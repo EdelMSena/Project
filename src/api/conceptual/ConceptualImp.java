@@ -1,6 +1,8 @@
 package api.network;
-package api.conceptual;
-package api.process;
+
+import project.annotations.NetworkAPI;
+import project.annotations.ConceptualAPI;
+import project.annotations.ProcessAPI;
 
 public class ConceptualImp implements ComputeInputData {
     private final ProcessApi processApi;
