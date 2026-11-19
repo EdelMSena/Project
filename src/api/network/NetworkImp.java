@@ -10,7 +10,7 @@ public class NetworkImp implements InputSource {
     }
 
     @Override
-    public OutputSource submitJob(InputSource is){
+    public OutputResponse submitJob(Job job) {
         return null;
     }
 }

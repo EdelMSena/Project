@@ -10,7 +10,9 @@ public class ConceptualImp implements ComputeInputData {
     }
 
     @Override
-    public InputDataResponse getSourceDetails(ComputeInputData compute) {
+    public InputDataResponse getSourceDetails(
+            DataRequest dataRequest,
+            FactorsLoading factors) {
         return null;
     }
 }
