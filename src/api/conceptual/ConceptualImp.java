@@ -1,4 +1,4 @@
-package api;
+package api.conceptual;
 
 public class ConceptualImp implements ComputeInputData {
     private final ProcessApi processApi;
