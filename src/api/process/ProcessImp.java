@@ -7,12 +7,12 @@ public class ProcessImp implements DataStorageKey {
     }
 
     @Override
-    public Object readStore(DataStorageKey key) {
+    public ReadVal readStore(DataStorageKey key) {
         return null;
     }
 
     @Override
-    public Object writeStore(DataStorageKey key) {
+    public StorageVal writeStore(DataStorageKey key) {
         return null;
     }
 }
