@@ -1,14 +1,12 @@
 package api.network;
 
-import project.annotations.NetworkAPI;
-import project.annotations.ConceptualAPI;
-import project.annotations.ProcessAPI;
+import api.conceptual.ComputeInputData;
 
 public class NetworkImp implements InputSource {
-    private final ConceptualApi conceptualApi;
+    private final ComputeInputData computeInputData;
 
-    public NetworkImp(ConceptualApi conceptualApi) {
-        this.conceptualApi = conceptualApi;
+    public NetworkImp(ComputeInputData computeInputData) {
+        this.computeInputData = computeInputData;
     }
 
     @Override

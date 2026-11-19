@@ -1,14 +1,12 @@
-package api.network;
+package api.conceptual;
 
-import project.annotations.NetworkAPI;
-import project.annotations.ConceptualAPI;
-import project.annotations.ProcessAPI;
+import api.process.DataStorageKey;
 
 public class ConceptualImp implements ComputeInputData {
-    private final ProcessApi processApi;
+    private final DataStorageKey dataStorageKey;
 
-    public ConceptualImp(ProcessApi processApi) {
-        this.processApi = processApi;
+    public ConceptualImp(DataStorageKey dataStorageKey) {
+        this.dataStorageKey = dataStorageKey;
     }
 
     @Override
