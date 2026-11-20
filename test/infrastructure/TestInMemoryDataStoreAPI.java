@@ -1,6 +1,6 @@
 package infrastructure;
 
-import src.api.process.DataStorageKey;
+import api.process.DataStorageKey;
 
 import java.util.List;
 
