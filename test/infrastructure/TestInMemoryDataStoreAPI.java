@@ -13,8 +13,8 @@ public class TestInMemoryDataStoreAPI implements DataStorageKey {
         this.outputLines = outputLines;
     }
 
-    public ReadVal readStore(ReadVal read) {
-        return null;
+    public List<Integer> readInput() {
+        return inputNumbers;
     }
 
     public StorageVal writeStore(StorageVal store) {
