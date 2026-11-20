@@ -2,22 +2,18 @@ package infrastructure;
 
 import api.process.DataStorageKey;
 
-import java.util.List;
+import api.process.ReadVal;
+import api.process.StorageVal;
 
 public class TestInMemoryDataStoreAPI implements DataStorageKey {
-    private final List<Integer> inputNumbers;
-    private final List<String> outputLines;
 
-    public TestInMemoryDataStoreAPI(List<Integer> inputNumbers, List<String> outputLines) {
-        this.inputNumbers = inputNumbers;
-        this.outputLines = outputLines;
+    @Override
+    public ReadVal readStore(ReadVal read) {
+        return read;
     }
 
-    public List<Integer> readInput() {
-        return inputNumbers;
-    }
-
-    public void writeOutput(List<String> results) {
-        outputLines.addAll(results);
+    @Override
+    public StorageVal writeStore(StorageVal store) {
+        return store;
     }
 }
