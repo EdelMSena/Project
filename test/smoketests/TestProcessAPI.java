@@ -1,4 +1,4 @@
-package smokeTests;
+package smoketests;
 
 import api.process.ProcessImp;
 import org.junit.jupiter.api.Assertions;

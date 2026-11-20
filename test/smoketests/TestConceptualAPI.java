@@ -1,4 +1,4 @@
-package smokeTests;
+package smoketests;
 
 import api.conceptual.ConceptualImp;
 import api.process.DataStorageKey;

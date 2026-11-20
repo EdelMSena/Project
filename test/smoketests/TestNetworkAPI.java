@@ -1,4 +1,4 @@
-package smokeTests;
+package smoketests;
 
 import api.conceptual.ComputeInputData;
 import api.network.NetworkImp;
