@@ -1,3 +1,5 @@
+package smokeTests;
+
 import api.conceptual.ConceptualImp;
 import api.process.DataStorageKey;
 import org.junit.jupiter.api.Assertions;

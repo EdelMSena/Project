@@ -1,8 +1,8 @@
-package test.infrastructure;
+package infrastructure;
 
 import java.util.List;
 
-public class TestInMemoryDataStoreAPI {
+public class TestInMemoryDataStoreAPI implements DataStorageKey {
     private final List<Integer> inputNumbers;
     private final List<String> outputLines;
 
