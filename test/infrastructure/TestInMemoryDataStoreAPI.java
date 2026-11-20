@@ -17,7 +17,7 @@ public class TestInMemoryDataStoreAPI implements DataStorageKey {
         return inputNumbers;
     }
 
-    public StorageVal writeStore(StorageVal store) {
-        return null;
+    public void writeOutput(List<String> results) {
+        outputLines.addAll(results);
     }
 }
