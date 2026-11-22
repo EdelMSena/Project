@@ -1,5 +1,3 @@
-package smoketests;
-
 import api.conceptual.ComputeInputData;
 import api.network.NetworkImp;
 import org.junit.jupiter.api.Assertions;
