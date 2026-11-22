@@ -8,7 +8,9 @@ import api.network.OutputResponse;
 import api.process.ProcessImp;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import infrastructure.TestInMemoryDataStoreAPI;
+import project.infrastructure.TestInMemoryDataStoreAPI;
+import project.infrastructure.InMemoryInput;
+import project.infrastructure.InMemoryOutput;
 
 import java.util.ArrayList;
 import java.util.Arrays;
