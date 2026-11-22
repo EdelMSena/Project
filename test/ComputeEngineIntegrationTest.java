@@ -6,7 +6,7 @@ import api.network.OutputResponse;
 import api.process.ProcessImp;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import test.infrastructure.TestInMemoryDataStoreAPI;
+import infrastructure.TestInMemoryDataStoreAPI;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package test.infrastructure;
+package infrastructure;
 
 import java.util.List;
 
