@@ -1,18 +1,13 @@
 package project;
 
 import api.conceptual.ConceptualImp;
-import api.conceptual.ComputeInputData;
 import api.network.Job;
 import api.network.NetworkImp;
-import api.network.OutputResponse;
-import api.process.ProcessImp;
+import api.process.ReadVal;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import project.infrastructure.TestInMemoryDataStoreAPI;
-import project.infrastructure.InMemoryInput;
-import project.infrastructure.InMemoryOutput;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -21,24 +16,22 @@ public class ComputeEngineIntegrationTest {
     @Test
     public void testComputeEngineIntegrationPipeline() {
         List<Integer> initialInput = Arrays.asList(1, 10, 25);
-        List<String> outputStorage = new ArrayList<>();
+        TestInMemoryDataStoreAPI dataStore = new TestInMemoryDataStoreAPI(initialInput);
 
-        TestInMemoryDataStoreAPI testDataStore = new TestInMemoryDataStoreAPI(initialInput, outputStorage);
+        // These are the real (currently empty) implementations, wired through the test-only data store.
+        ConceptualImp conceptual = new ConceptualImp(dataStore);
+        NetworkImp network = new NetworkImp(conceptual);
 
-        ProcessImp processImp = new ProcessImp();
-        ConceptualImp conceptualImp = new ConceptualImp(processImp);
-        NetworkImp networkImp = new NetworkImp(conceptualImp);
-
-        List<Integer> data = testDataStore.readInput();
-        Assertions.assertEquals(3, data.size());
-        Assertions.assertEquals(1, data.get(0));
-        Assertions.assertEquals(10, data.get(1));
-        Assertions.assertEquals(25, data.get(2));
-
-        for (Integer value : data) {
-            OutputResponse response = networkImp.submitJob(new Job(value.toString()));
+        for (int i = 0; i < initialInput.size(); i++) {
+            ReadVal input = dataStore.readStore(() -> "");
+            Assertions.assertNotNull(input, "The test data store should provide each initial input value");
+            network.submitJob(new Job(input.getValue()));
         }
 
-        Assertions.assertNotNull(outputStorage);
+        // Prime-factor outputs follow the README's multiplication notation. This assertion is
+        // expected to fail until the compute-engine implementations write their results to storage.
+        List<String> expectedOutput = Arrays.asList("1", "2*5", "5*5");
+        Assertions.assertEquals(expectedOutput, dataStore.getOutputValues());
     }
 }
+

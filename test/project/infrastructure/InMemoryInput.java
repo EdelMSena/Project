@@ -1,4 +1,4 @@
-package infrastructure;
+package project.infrastructure;
 
 import java.util.List;
 
