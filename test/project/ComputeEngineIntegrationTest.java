@@ -28,7 +28,7 @@ public class ComputeEngineIntegrationTest {
         }
 
         List<String> expectedOutput = Arrays.asList("1", "2*5", "5*5");
-        //Assertions.assertEquals(expectedOutput, dataStore.getOutputValues());
+        Assertions.assertEquals(expectedOutput, dataStore.getOutputValues());
     }
 }
 
