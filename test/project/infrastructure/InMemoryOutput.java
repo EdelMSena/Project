@@ -1,4 +1,4 @@
-package test.infrastructure;
+package project.infrastructure;
 
 import java.util.ArrayList;
 import java.util.List;
